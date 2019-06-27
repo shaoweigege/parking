@@ -498,3 +498,19 @@ body .demo-blog {
   background-color: white;
   box-sizing: border-box;
 }
+
+/* Custom styles */
+
+#view-source {
+  position: fixed;
+  display: block;
+  right: 0;
+  bottom: 0;
+  margin-right: 40px;
+  margin-bottom: 40px;
+  z-index: 900;
+}
+
+#disqus_thread {
+  width: 100%;
+}
