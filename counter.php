@@ -6,8 +6,9 @@
     }
 
     $fp = fopen($fileName, "r+");
-    if (!fp) {
+    if (!$fp) {
         echo('Temporarily unavailable');
+        var_dump($fileName);
     } else {
         while(!flock($fp, LOCK_EX)) {  // acquire an exclusive lock
             // waiting to lock the file
@@ -23,7 +24,6 @@
         fwrite($fp, $counter);  // set your data
         fflush($fp);            // flush output before releasing the lock
         flock($fp, LOCK_UN);    // release the lock
-
-        fclose($fp);
     }
+    fclose($fp);
 ?>
