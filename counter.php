@@ -1,9 +1,8 @@
 <?php
-    $fileName = "count/" + $_SERVER['SERVER_NAME'];
+    $fileName = __DIR__.'/count/'.$_SERVER['SERVER_NAME'];
 
     if(!is_file($fileName)){
-        $contents = '0';                         // Initial value
-        file_put_contents($file, $contents);     // Save our content to the file.
+        file_put_contents($fileName, '0');
     }
 
     $fp = fopen($fileName, "r+");
@@ -12,8 +11,11 @@
         // waiting to lock the file
     }
 
-    $counter = intval(fread($fp, filesize($fileName)));
+    $str = fread($fp, filesize($fileName));
+    $counter = intval(trim($str));
     $counter++;
+
+    echo($counter);
 
     ftruncate($fp, 0);      // truncate file
     fwrite($fp, $counter);  // set your data

@@ -89,7 +89,8 @@
       url: "counter.php",
       context: document.body
     }).fail((error) => {
-      console.log('Retrieve counter failed ' + error);
+      console.log('Retrieve counter failed');
+      console.log(error);
     }).done((data) => {
       $('#visit-count').text(data);
     })
@@ -119,8 +120,7 @@
           </button>
           <div class="mdl-card__media mdl-color--white mdl-color-text--grey-600">
             <img src="images/logo.png">
-            <span id="visit-count"></span>
-            +1,337
+            Visitors: <span id="visit-count"></span>
           </div>
           <div class="mdl-card__supporting-text meta meta--fill mdl-color-text--grey-600">
             <div>
