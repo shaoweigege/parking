@@ -1,14 +1,14 @@
 # parking
-Simple parking page for multiple domains
+Simple, material-designed parking page for multiple domains
 
 ## Features
 * Material design
 * Disqus integration for chat
-* PHP file-based visit counter
+* PHP file-based visit counter (stored in /count directory)
+* Redirect support (just put destination URL in /redirect)
+
 
 ## Demo
-* [9pan.kr](https://9pan.kr)
-* [afreeca.vn](https://afreeca.vn)
 * [arab.vn](https://arab.vn)
 * [bad.vn](https://bad.vn)
 * [bake.kr](https://bake.kr)
@@ -16,7 +16,6 @@ Simple parking page for multiple domains
 * [barlaw.kr](https://barlaw.kr)
 * [born.vn](https://born.vn)
 * [buck.vn](https://buck.vn)
-* [chimac.kr](https://chimac.kr)
 * [cloc.kr](https://cloc.kr)
 * [clue.vn](https://clue.vn)
 * [coat.vn](https://coat.vn)
@@ -29,28 +28,25 @@ Simple parking page for multiple domains
 * [each.vn](https://each.vn)
 * [earn.vn](https://earn.vn)
 * [ease.vn](https://ease.vn)
-* [gooogle.kr](https://gooogle.kr)
 * [hate.kr](https://hate.kr)
 * [jail.kr](https://jail.kr)
 * [jer.kr](https://jer.kr)
 * [jury.kr](https://jury.kr)
-* [kakaotalk.vn](https://kakaotalk.vn)
-* [kimchang.vn](https://kimchang.vn)
 * [kyeongin.info](https://kyeongin.info)
 * [lawwin.kr](https://lawwin.kr)
-* [lolworld.kr](https://lolworld.kr)
-* [mcdonald.kr](https://mcdonald.kr)
 * [netmarble.vn](https://netmarble.vn)
 * [our.vn](https://our.vn)
 * [pant.kr](https://pant.kr)
-* [phauthuatthammi.com](https://phauthuatthammi.com)
 * [quoc.shop](https://quoc.shop)
 * [rely.kr](https://rely.kr)
 * [seem.kr](https://seem.kr)
 * [swiftcrm.cn](https://swiftcrm.cn)
 * [then.kr](https://then.kr)
 * [trungquoc.cn](https://trungquoc.cn)
-* [viralworks.info](https://viralworks.info)
 * [weak.kr](https://weak.kr)
 * [yet.kr](https://yet.kr)
 * [yor.kr](https://yor.kr)
+
+##Visit us at
+* [netviet.kr](https://netviet.kr)
+* [hanquoc.kr](https://hanquoc.kr)
