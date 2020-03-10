@@ -45,11 +45,13 @@
   <script>
     let dotCount = (window.location.hostname.split(".").length - 1)
     // Use https if on the main domain, http otherwise because it's hard to get a wildcard cert
+    /*
     if (dotCount == 1 && window.location.hostname != 'localhost' && location.protocol != 'https:' && location.protocol != 'file:') {
       location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
     } else if (location.protocol == 'https:' && dotCount != 1) {
       location.href = 'http:' + window.location.href.substring(window.location.protocol.length);
     }
+    */
 
     $(document).ready(function () {
       $('.domainname').text(window.location.hostname);
