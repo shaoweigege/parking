@@ -7,6 +7,11 @@ Simple, material-designed parking page for multiple domains
 * PHP file-based visit counter (stored in /count directory)
 * Redirect support (just put destination URL in /redirect)
 
+## Files
+* index.html: main file
+* count.php: increase count for server
+* redirect.php: find redirect URL for specific host and echo it
+* frame.php: display a frame with contact info around target url
 
 ## Demo
 * [arab.vn](https://arab.vn)
@@ -23,7 +28,6 @@ Simple, material-designed parking page for multiple domains
 * [cry.vn](https://cry.vn)
 * [dark.vn](https://dark.vn)
 * [dead.vn](https://dead.vn)
-* [dlive.vn](https://dlive.vn)
 * [duty.vn](https://duty.vn)
 * [each.vn](https://each.vn)
 * [earn.vn](https://earn.vn)
@@ -34,19 +38,17 @@ Simple, material-designed parking page for multiple domains
 * [jury.kr](https://jury.kr)
 * [kyeongin.info](https://kyeongin.info)
 * [lawwin.kr](https://lawwin.kr)
-* [netmarble.vn](https://netmarble.vn)
 * [our.vn](https://our.vn)
 * [pant.kr](https://pant.kr)
 * [quoc.shop](https://quoc.shop)
 * [rely.kr](https://rely.kr)
 * [seem.kr](https://seem.kr)
-* [swiftcrm.cn](https://swiftcrm.cn)
 * [then.kr](https://then.kr)
 * [trungquoc.cn](https://trungquoc.cn)
 * [weak.kr](https://weak.kr)
 * [yet.kr](https://yet.kr)
 * [yor.kr](https://yor.kr)
 
-##Visit us at
+## Visit us at
 * [netviet.kr](https://netviet.kr)
 * [hanquoc.kr](https://hanquoc.kr)
