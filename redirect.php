@@ -1,6 +1,5 @@
 <?php
-    $urlData = parse_url($_SERVER['SERVER_NAME']);
-    $fileName = __DIR__.'/redirect/'.$urlData['host'];
+    $fileName = str_replace("www.", "", $_SERVER['SERVER_NAME']);
 
     if(!is_file($fileName)){
         echo("");
