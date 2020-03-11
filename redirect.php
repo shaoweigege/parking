@@ -1,5 +1,6 @@
 <?php
-    $fileName = __DIR__.'/redirect/'.$_SERVER['SERVER_NAME'];
+    $urlData = parse_url($_SERVER['SERVER_NAME']);
+    $fileName = __DIR__.'/redirect/'.$urlData['host'];
 
     if(!is_file($fileName)){
         echo("");
@@ -13,7 +14,7 @@
           if ($str === FALSE) {
             echo("");
           } else {
-            $url = trim($str);
+            $url = parse_url(trim($str));
             echo($url);
           }
       }
