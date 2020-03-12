@@ -2,6 +2,7 @@
   $data = [
       "afreeca.vn" => "https://faceboo.kr",
       "barlaw.kr" => "https://hanquoc.kr/category/tin-phap-luat/",
+      "baybong.com" => "https://hanquoc.kr/ve-may-bay/",
       "hanquoc.wiki" => "https://hanquoc.kr",
       "hyperledgerkorea.com" => "https://faceboo.kr/groups/hyperledger",
       "hyperledgervietnam.com" => "https://faceboo.kr/groups/hyperledger",
