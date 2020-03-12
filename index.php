@@ -36,7 +36,7 @@
     }
 
     if ($found === FALSE) {
-        echo("https://netviet.kr/domains");
+        echo("https://netviet.kr/domain/");
     }
 
     ?>"
