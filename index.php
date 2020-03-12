@@ -8,7 +8,7 @@
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-</head>
+</head>1
 
 <body>
     <nav>
@@ -24,25 +24,19 @@
     </nav>
     <iframe src="<?php 
 
-    $data = [
-        "barlaw.kr" => "https://luatsuhanquoc.com",
-        "hyperledgerkorea.com" => "https://faceboo.kr/groups/hyperledger",
-        "hyperledgervietnam.com" => "https://faceboo.kr/groups/hyperledger",
-        "koreamoneytransfer.com" => "https://hanquoc.kr/how-to-register-and-use-wirebarley-to-transfer-money-home/",
-        "kyeongin.info" => "https://netviet.kr",
-        "waygook.kr" => "https://faceboo.kr",
-        "yoonji.kr" => "https://hanquoc.kr",
-    ]
+    include 'data.php';
 
     $found = FALSE;
     foreach ($data as $key => $value) {
-        if(stristr($_SERVER['SERVER_NAME'], $key) {
+        if (stristr($_SERVER['SERVER_NAME'], $key)) {
             echo($value);
             $found = TRUE;
+            break;
         }
     }
+
     if ($found === FALSE) {
-        echo("https://netviet.kr/domains")
+        echo("https://netviet.kr/domains");
     }
 
     ?>"
@@ -56,5 +50,14 @@
         $('#sendmail').click(function () {
             window.open('mailto:domains@netviet.kr?subject=Domain offer for ' + window.location.hostname);
         });
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108055015-8"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-108055015-8');
     </script>
 </body>

@@ -3,15 +3,12 @@ Simple, material-designed parking page for multiple domains
 
 ## Features
 * Material design
-* Disqus integration for chat
 * PHP file-based visit counter (stored in /count directory)
-* Redirect support (just put destination URL in /redirect)
+* Redirect support (just put destination URL in data.php)
 
 ## Files
-* index.html: main file
+* index.php: main file
 * count.php: increase count for server
-* redirect.php: find redirect URL for specific host and echo it
-* frame.php: display a frame with contact info around target url
 
 ## Demo
 * [arab.vn](https://arab.vn)
