@@ -1,4 +1,5 @@
-<html xmlns="http://www.w3.org/1999/xhtml"lang="en-US"	>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">

@@ -53,7 +53,7 @@
         "noframe" => FALSE,
       ],
       "yor.kr" => [
-        "url" => "https://hanquoc.kr/lien-he"
+        "url" => "https://hanquoc.kr/lien-he",
         "noframe" => FALSE,
       ],
   ];
