@@ -11,46 +11,54 @@
 </head>
 
 <body>
-    <nav>
-        <div class="nav-wrapper">
-            <a id="domainname" href="#" class="brand-logo" style="padding-left: 10px">Domain name</a>
-            <ul id="nav-mobile" class="right" style="padding-right: 10px">
-                <li>
-                    <a id="sendmail">
-                        <i class="material-icons left">mail</i>Let's work together!</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <iframe src="<?php 
+    <?php 
 
     include 'data.php';
 
-    $found = FALSE;
+    $url = "https://netviet.kr/domain/";
+    $noframe = FALSE;
     foreach ($data as $key => $value) {
         if (stristr($_SERVER['SERVER_NAME'], $key)) {
-            echo($value);
-            $found = TRUE;
+            $url = $value["url"];
+            $noframe = $value["noframe"];
             break;
         }
     }
-
-    if ($found === FALSE) {
-        echo("https://netviet.kr/domain/");
+    if ($noframe) {
+        ?>
+        <iframe src="<?php echo $url ?>"
+            style="position:fixed; top:0px; left:0px; bottom:0px; right:0px; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden;">
+            Your browser doesn't support iframes
+        </iframe>
+        <?php
+    } else {
+        ?>
+        <nav>
+            <div class="nav-wrapper">
+                <a id="domainname" href="#" class="brand-logo" style="padding-left: 10px">Domain name</a>
+                <ul id="nav-mobile" class="right" style="padding-right: 10px">
+                    <li>
+                        <a id="sendmail">
+                            <i class="material-icons left">mail</i>Let's work together!</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <iframe src="<?php echo $url ?>"
+            style="position:fixed; top:64px; left:0px; bottom:0px; right:0px; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:999999;">
+            Your browser doesn't support iframes
+        </iframe>
+        <script>
+            $(document).ready(function () {
+                $('#domainname').text(window.location.hostname);
+            });
+            $('#sendmail').click(function () {
+                window.open('mailto:domains@netviet.kr?subject=Domain offer for ' + window.location.hostname);
+            });
+        </script>
+        <?php
     }
-
-    ?>"
-        style="position:fixed; top:64px; left:0px; bottom:0px; right:0px; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:999999;">
-        Your browser doesn't support iframes
-    </iframe>
-    <script>
-        $(document).ready(function () {
-            $('#domainname').text(window.location.hostname);
-        });
-        $('#sendmail').click(function () {
-            window.open('mailto:domains@netviet.kr?subject=Domain offer for ' + window.location.hostname);
-        });
-    </script>
+    ?>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108055015-8"></script>
     <script>
