@@ -1,3 +1,4 @@
+<html xmlns="http://www.w3.org/1999/xhtml"lang="en-US"	>
 <head>
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -24,7 +25,7 @@
             break;
         }
     }
-    if ($noframe) {
+    if ($noframe === TRUE) {
         ?>
         <iframe src="<?php echo $url ?>"
             style="position:fixed; top:0px; left:0px; bottom:0px; right:0px; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden;">
@@ -69,3 +70,4 @@
         gtag('config', 'UA-108055015-8');
     </script>
 </body>
+</html>
