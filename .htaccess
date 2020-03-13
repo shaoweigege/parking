@@ -1,8 +1,5 @@
 RewriteEngine On
 
-RewriteCond %{HTTPS} !=on
-RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301,NE] 
-
 RewriteBase /
 RewriteRule ^counter\.php$ - [L]
 # If the request is not for a valid directory
